@@ -70,6 +70,7 @@ function endGame() {
 function startGame() {
     if (game.playerHand === "") {
         alert("Musisz wybrać dłoń")
+        return;
     }
     game.aiHand = aiChoice();
     const gameResult = checkResult(game.playerHand, game.aiHand)
